@@ -5,12 +5,12 @@
        
        # Edit config file
        sudo vi /etc/proftpd/proftpd.conf
-       // changings
+       # changings
        ServerName       "example.com"
-       //  jail the user
+       #  jail the user
        DefaultRoot      ~
        
-       //  Restart proftpd server
+       #  Restart proftpd server
        sudo service proftpd restart
        
       
@@ -20,21 +20,22 @@
       #  make directory for user
       sudo mkdir /home/ftp
       
-      //  don't access to shell
+      #  don't access to shell
       sudo vi /etc/shells
       
-      // add this line in file
+      # add this line in file
       /bin/false
       
-      // Now add user
+      # Now add user
       sudo useradd ftpUserName  -p  yourPasswd  -d  /home/ftp  -s  /bin/false
       
 //   Use ProFTPd
       
-      //  Go to your local browser and type 
+      #  Go to your local browser and type 
       ftp://localhost
       
-      // If you wana access proFTPd from other computers type in browser
+      # If you wana access proFTPd from other computers type in browser
       ftp://mainServerIP
-      // for example
+      
+      # for example
       ftp://912.168.11.124
