@@ -3,7 +3,7 @@
           
        sudo apt install proftpd
        
-       // Edit config file
+       # Edit config file
        sudo vi /etc/proftpd/proftpd.conf
        // changings
        ServerName       "example.com"
@@ -13,10 +13,11 @@
        //  Restart proftpd server
        sudo service proftpd restart
        
-       
- //  add new User
       
-      //  make directory for user
+#  add new User
+      
+      
+      #  make directory for user
       sudo mkdir /home/ftp
       
       //  don't access to shell
