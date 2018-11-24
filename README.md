@@ -1,12 +1,14 @@
 # Proftpd-Setup-Steps
-//  Install proFTPd
-          
+
+       # Install proFTPd  
        sudo apt install proftpd
        
        # Edit config file
        sudo vi /etc/proftpd/proftpd.conf
+       
        # changings
        ServerName       "example.com"
+       
        #  jail the user
        DefaultRoot      ~
        
@@ -29,7 +31,7 @@
       # Now add user
       sudo useradd ftpUserName  -p  yourPasswd  -d  /home/ftp  -s  /bin/false
       
-//   Use ProFTPd
+#  Use ProFTPd
       
       #  Go to your local browser and type 
       ftp://localhost
